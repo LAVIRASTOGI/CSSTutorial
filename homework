@@ -1,0 +1,17 @@
+1. CSS what is 2.https://developer.mozilla.org/en-US/docs/Learn/CSS
+2. Css colors
+3. Type of writing CSS
+   (inline , internal,external)
+4. Priority -->
+   important>inline>idselector> class Selector>internal>external
+5. different types of selector--
+   type selctor , id selector , class selector,
+   multiple selector,
+   universal selctor,
+
+6. import google fonts to our application
+   7.attribute selector
+
+8 pseudo classes
+9.pseudo elements
+explore using css tutorial

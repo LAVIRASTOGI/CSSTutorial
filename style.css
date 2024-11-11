@@ -1,0 +1,40 @@
+a,
+h1,
+span {
+  color: burlywood;
+}
+#firstClass1 {
+  color: pink;
+}
+
+/* #firstClass1::after {
+  content: "sss";
+} */
+
+.firstClass {
+  color: blue;
+}
+p::first-line {
+  color: green;
+}
+
+* {
+  font-family: "Delius", cursive;
+  font-weight: 400;
+  background-color: rgb(145, 159, 159);
+}
+
+/* input[type*="e"] {
+  color: blueviolet;
+  background-color: aqua;
+} */
+
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: red;
+}
+
+li:nth-child(odd) {
+  color: bisque;
+}
