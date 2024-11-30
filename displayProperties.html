@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .blockToInline {
+        display: inline;
+        background: red;
+        width: 200px;
+        padding: 20px;
+      }
+      /* .blockClass {
+        background: pink;
+      } */
+      .blockToInlineBlock {
+        display: inline-block;
+        background: red;
+        width: 400px;
+        padding: 20px;
+      }
+      .inline {
+        background: green;
+      }
+      .inlinetoblock {
+        background: purple;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- display properties -->
+    <!-- <h1 class="blockClass">This is block element converting to inline</h1> -->
+    <h1 class="blockToInline">This is block element converting to inline</h1>
+    <h1 class="blockToInlineBlock">
+      This is block element converting to inline Block
+    </h1>
+
+    <!-- inline -->
+    <span class="inline">Inline elment</span>
+    <span class="inlinetoblock">Inline element to block</span>
+  </body>
+</html>
