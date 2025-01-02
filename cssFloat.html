@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .imgFloat {
+        /* float: right; */
+        float: left;
+      }
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Float and clear</h1>
+    <!-- its like this becoz after float the image leaves its position float lefts
+    /right from parent and  for div only <p> exists 
+    and if overflow :hidden it will remove clear and will be proper
+        -->
+    <div style="background: lightblue">
+      <p class="imgFloat">
+        the image will float left/right and paragraph will set accordindly
+      </p>
+      <img src="./smallImage.jpg" alt="demo" class="imgFloat" />
+      <p class="clear">I dont want this to float</p>
+    </div>
+  </body>
+</html>

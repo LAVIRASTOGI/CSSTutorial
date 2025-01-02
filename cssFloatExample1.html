@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font: 16px sans-serif;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      header {
+        background: #faa;
+        padding: 10px;
+      }
+      nav {
+        background: #333;
+        padding: 10px;
+        color: #fff;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+      nav ul li {
+        float: left;
+        margin-right: 10px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        padding: 8px 12px;
+      }
+      main {
+        background: #afa;
+      }
+      aside {
+        width: 25%;
+        float: left;
+        padding: 10px;
+        background: #afa;
+      }
+      section {
+        width: 75%;
+        float: left;
+        padding: 10px;
+        background: #ccc;
+      }
+      .clear {
+        clear: both;
+      }
+      footer {
+        background: #aaf;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>header</header>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Career</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <div class="clear" role="presentation"></div>
+      </nav>
+      <main>
+        <aside>aside</aside>
+        <section>section</section>
+        <div class="clear"></div>
+      </main>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Properties Example</title>
+    <style>
+      .example-box {
+        width: 300px;
+        height: 150px;
+        border: 5px solid #3498db; /* Shorthand */
+        border-radius: 15px; /* Rounded corners */
+        /* border-image: url("./smallImage.jpg") 30 stretch; */
+        border-top: 4px dashed red; /* Individual side */
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 2px solid black;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      th {
+        border-bottom: 2px solid #3498db;
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="example-box">Example Box with All Border Properties</div>
+
+    <h3>Table with Borders</h3>
+    <table>
+      <tr>
+        <th>Property</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td>border</td>
+        <td>Shorthand for setting all border properties.</td>
+        <td><code>border: 2px solid blue;</code></td>
+      </tr>
+      <tr>
+        <td>border-radius</td>
+        <td>Rounds the corners of the element.</td>
+        <td><code>border-radius: 15px;</code></td>
+      </tr>
+      <tr>
+        <td>border-image</td>
+        <td>Sets an image as the border.</td>
+        <td><code>border-image: url('border.png') 30 stretch;</code></td>
+      </tr>
+    </table>
+  </body>
+</html>
