@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anchor States Example</title>
+    <style>
+      a {
+        text-decoration: none; /* Removes the default underline */
+        color: #007bff; /* Default link color */
+        font-weight: bold;
+      }
+
+      a:visited {
+        color: #5a5a5a; /* Color for visited links */
+      }
+
+      a:hover {
+        color: #0056b3; /* Change color on hover */
+        text-decoration: underline; /* Optional underline on hover */
+        transform: scale(1.05); /* Slightly enlarge the link */
+      }
+
+      a:active {
+        color: #ff0000; /* Color when the link is active */
+        transform: scale(0.95); /* Slightly shrink the link */
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://example.com">Visit Example</a>
+  </body>
+</html>
