@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* h1,
+      h2,
+      .clssName,
+      #iddd {
+        color: blueviolet;
+      } */
+      * {
+        color: red;
+        font-size: 40px;
+      }
+      /* equal */
+      input[placeholder="First Name"] {
+        color: blue;
+      }
+      /* start with particular word */
+      input[placeholder^="First"] {
+        color: green;
+      }
+      /* end with particular word */
+      input[placeholder$="password"] {
+        color: yellow;
+      }
+      /* contain particular word */
+      input[placeholder="password"] {
+        color: black;
+      }
+
+      /* p::first-letter {
+        color: yellow;
+      } */
+      h1::before {
+        content: "@";
+        color: aquamarine;
+        font-size: 50px;
+      }
+      h1::after {
+        content: "!";
+      }
+      input::placeholder {
+        color: grey;
+        font-style: italic;
+      }
+
+      a {
+        text-decoration: none;
+      }
+      a:visited {
+        color: chocolate;
+        text-decoration: overline;
+      }
+      a:hover {
+        color: burlywood;
+        text-decoration: underline;
+      }
+      a:active {
+        color: green;
+      }
+      li:nth-child(odd) {
+        color: blueviolet;
+      }
+      li:last-child {
+        color: burlywood;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS selectors -->
+    <h1>Intro to heading tab</h1>
+    <h2>intro to css</h2>
+    <p class="clssName">hello css</p>
+    <span id="iddd">dd</span>
+    <span
+      ><i class="fas fa-home"></i> hello working on css selectors
+      <span>ddddddddddddddddddddddd</span>
+    </span>
+    <br />
+    <span>puesdo selector</span>
+    <p>
+      pseduo class -- Lorem, ipsum ipsum dolor sit amet consectetur adipisicing
+      elit. Soluta sint doloribus qui animi modi ea, sed ipsam voluptatem odio
+      nam veritatis eos esse maiores obcaecati praesentium. Recusandae ducimus
+      neque sed aperiam mollitia, aliquam ut fugit, ipsam est rem itaque harum.
+      Numquam perferendis laboriosam laudantium, maxime dolorem est quisquam ex
+      voluptatem molestiae adipisci? Iure quos maiores facere natus dolorem
+      aliquid, similique praesentium omnis aut eius! Est quidem exercitationem
+      dolor quaerat excepturi iusto? Et qui nisi architecto iusto? Consectetur
+      optio ducimus eius totam voluptate minus ad dolor incidunt ipsa fugiat
+      culpa cumque earum, dolorum beatae ullam libero nulla iusto blanditiis a
+      tenetur!
+    </p>
+    <p>
+      lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta sint
+      doloribus qui animi modi ea, sed ipsam voluptatem odio nam veritatis eos
+      esse maiores obcaecati praesentium. Recusandae ducimus neque sed aperiam
+      mollitia, aliquam ut fugit, ipsam est rem itaque harum. Numquam
+      perferendis laboriosam laudantium, maxime dolorem est quisquam ex
+      voluptatem molestiae adipisci? Iure quos maiores facere natus dolorem
+      aliquid, similique praesentium omnis aut eius! Est quidem exercitationem
+      dolor quaerat excepturi iusto? Et qui nisi architecto iusto? Consectetur
+      optio ducimus eius totam voluptate minus ad dolor incidunt ipsa fugiat
+      culpa cumque earum, dolorum beatae ullam libero nulla iusto blanditiis a
+      tenetur!
+    </p>
+
+    <form>
+      <input type="text" id="fname" placeholder="First Name" />
+      <input type="text" id="lname" placeholder="First password sirname" />
+      <input type="password" id="password" placeholder="Enter password" />
+    </form>
+    <a href="./cssExternal.html"> Iindex file</a>
+
+    <p class="combinatorPara">
+      <span>List of coffeddddddddddddde</span>
+      <b> <span>ddd</span></b>
+      <img src="./smallImage.jpg" />
+      <span>List of coffee</span>
+    </p>
+  </body>
+</html>

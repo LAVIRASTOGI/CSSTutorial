@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      /* child combinatore only direct children */
+      div > span {
+        color: red;
+      }
+      /* descent combinatore */
+      div span {
+        color: yellow;
+      }
+
+      /* immediate sibling */
+      h1 + p {
+        color: brown;
+      }
+
+      /* all siblings but after element */
+      h1 ~ p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Hello Css combinators</h1>
+      <p>
+        This is next para
+        <span>Hello Css para element</span>
+      </p>
+      <p>This is also nect para</p>
+      <span>Hello Css</span>
+    </div>
+  </body>
+</html>
