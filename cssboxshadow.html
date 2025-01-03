@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box1,
+      .box2,
+      .box3 {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        float: left;
+        margin-right: 20px;
+        margin-top: 40px;
+        margin-left: 20px;
+        text-align: center;
+      }
+      .box1 {
+        box-shadow: 10px 10px red;
+      }
+      .box2 {
+        box-shadow: 10px 10px 10px 10px pink;
+      }
+      .box3 {
+        box-shadow: 10px 10px 10px 10px pink, 10px 10px 10px 20px blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">BOX1</div>
+    <div class="box2">BOX2</div>
+    <div class="box3">BOX3</div>
+  </body>
+</html>
