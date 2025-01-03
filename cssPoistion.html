@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbarcontainer {
+        position: fixed;
+        z-index: 100;
+        color: darkgreen;
+        left: 400px;
+      }
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background: violet;
+        padding: 10px;
+      }
+      .box2 {
+        width: 200px;
+        height: 200px;
+        background: #999;
+        padding: 10px;
+        position: relative;
+        left: 100px;
+        top: 100px;
+      }
+      .box3 {
+        width: 200px;
+        height: 200px;
+        background: pink;
+        position: relative;
+        left: 100px;
+      }
+      .box4 {
+        width: 200px;
+        height: 200px;
+        background: lightgray;
+        position: relative;
+        left: 100px;
+        bottom: 150px;
+      }
+      .imgAbsolute1 {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+      }
+      .imgAbsolute2 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
+
+      .content {
+        height: 100vh;
+      }
+
+      footer {
+        position: sticky;
+        bottom: 0; /* Stick the footer to the bottom */
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- fixed -->
+    <nav class="navbarcontainer">
+      <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <!-- relative -->
+    <h1>Relative</h1>
+    <div class="box1">Div with position static.</div>
+    <div class="box2">Div with relative position, left 200px and top 100px</div>
+    <div class="box3">Div with relative position, left 200px</div>
+    <div class="box4">
+      Div with relative position, left 200px and bottom 150px and now absolute
+      example
+      <img
+        src="./smallImage.jpg"
+        class="imgAbsolute1"
+        width="100"
+        height="100"
+      />
+      <img
+        src="./logoLight.png"
+        class="imgAbsolute2"
+        width="100"
+        height="100"
+      />
+    </div>
+
+    <div class="content">
+      <p>Main content goes here...</p>
+    </div>
+    <footer>
+      <p>Sticky Footer</p>
+    </footer>
+  </body>
+</html>
