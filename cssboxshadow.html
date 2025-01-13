@@ -5,32 +5,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+      }
+      .feeback {
+        position: sticky;
+        /* top: 50px; */
+        background-color: yellow;
+        padding: 50px;
+        font-size: 20px;
+        z-index: 999999;
+        bottom: 0;
+      }
       .box1,
       .box2,
       .box3 {
         width: 200px;
         height: 200px;
-        border: 1px solid black;
+        /* border: 1px solid black;
         float: left;
         margin-right: 20px;
         margin-top: 40px;
         margin-left: 20px;
-        text-align: center;
+        text-align: center; */
       }
       .box1 {
-        box-shadow: 10px 10px red;
+        /* box-shadow: 10px 10px 10px 10px rgba(255, 182, 193, 0.6); */
+        background: red;
+        /* top: 20px;
+        position: relative; */
+        /* z-index: 3; */
       }
       .box2 {
-        box-shadow: 10px 10px 10px 10px pink;
+        /* box-shadow: 10px 10px 10px 10px pink; */
+        background: blue;
+        position: absolute;
+        top: 100px;
+        /* top: 20px; */
+        /* left: 30px; */
+        /* bottom: 20px; */
+        /* z-index: 10; */
+        /* right: 40px; */
       }
       .box3 {
-        box-shadow: 10px 10px 10px 10px pink, 10px 10px 10px 20px blueviolet;
+        /* box-shadow: 10px 10px 10px 10px pink, 10px 10px 10px 20px red; */
+        background: yellow;
+        /* position: relative; */
+        /* bottom: 50px; */
+        /* z-index: 2; */
+      }
+      .heroContainer {
+        width: 100%;
+        height: 400px;
+        background: pink;
+        text-align: center;
+        position: relative;
+      }
+      .heroSection {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        background: yellow;
+      }
+      .heroSection2 {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        width: 100px;
+        height: 100px;
+        background: red;
+        z-index: 3;
+      }
+      .navsection {
+        background: black;
+        color: white;
+        text-align: right;
+        /* position: fixed;
+        width: 100%;
+        z-index: 100; */
+      }
+      .navsection li {
+        display: inline-block;
+        padding: 10px;
+      }
+      .navsection ul {
+        padding-right: 10px;
+      }
+      .container {
+        position: relative;
+        /* max-height: 300px; */
+        overflow-y: auto;
+        border: 1px solid #ccc;
+      }
+
+      .content {
+        padding: 20px;
+        background-color: #f9f9f9;
+        height: 600px; /* To create a scrollable container */
+      }
+
+      .sticky-footer {
+        position: sticky;
+        bottom: 0;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        z-index: 9999999999999;
       }
     </style>
   </head>
   <body>
-    <div class="box1">BOX1</div>
-    <div class="box2">BOX2</div>
-    <div class="box3">BOX3</div>
+    <div class="container">
+      <nav class="navsection">
+        <ul>
+          <li>ABOUT us</li>
+          <li>Comtact us</li>
+          <li>Home</li>
+        </ul>
+      </nav>
+      <div class="content">
+        <p>Scroll down to see the sticky footer in action.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+
+        <div class="box1">BOX1</div>
+        <div class="box2">BOX2</div>
+        <div class="box3">BOX3</div>
+        <div class="box1">BOX1</div>
+        <div class="feeback">
+          <h1>Feedback</h1>
+        </div>
+        <div class="box2">BOX2</div>
+        <div class="box3">BOX3</div>
+        <div class="box1">BOX1</div>
+        <div class="box2">BOX2</div>
+        <div class="box3">BOX3</div>
+        <div class="box1">BOX1</div>
+        <div class="box2">BOX2</div>
+        <div class="box3">BOX3</div>
+
+        <div class="heroContainer">
+          <div class="heroSection">
+            <h1>About us</h1>
+            <p>Hi this is dev ready</p>
+            <button>hello lavi</button>
+          </div>
+          <div class="heroSection2">
+            <h1>About usfff</h1>
+            <p>Hi this is dev ready</p>
+            <button>hello lavi</button>
+          </div>
+        </div>
+      </div>
+      <div class="sticky-footer">This footer stays sticky at the bottom!</div>
+    </div>
   </body>
 </html>

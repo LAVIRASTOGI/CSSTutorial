@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex grow</title>
+    <!-- by default grow is 0 -->
+    <style>
+      .box1 {
+        background: pink;
+        height: 400px;
+        order: 3;
+      }
+      .box2 {
+        background: orange;
+        height: 400px;
+        order: 2;
+      }
+      .box3 {
+        background: lightblue;
+        /* if grow 1 then this item will grow and take rest space */
+        flex-grow: 1;
+      }
+      .box4 {
+        background: violet;
+        order: 1;
+        /* if add in 2 flex grow they will occupy the existing space */
+        flex-grow: 1;
+      }
+
+      /* if add in 2 flex grow they will occupy the existing space */
+
+      .box5 {
+        background: maroon;
+        /* twice of other item space */
+        flex-grow: 2;
+      }
+      /* flex basis (width of a particular item) will be 400px  */
+
+      .box6 {
+        background: green;
+        flex-basis: 400px;
+        flex-shrink: 0;
+      }
+      /* .box7 {
+        background: yellowgreen;
+        width: 400px;
+        height: 400px;
+      }
+      .box8 {
+        background: pink;
+        width: 400px;
+        height: 400px;
+      } */
+      .mainContainer {
+        display: flex;
+        background: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="box1">
+        <h1>BOX1</h1>
+      </div>
+      <div class="box2">
+        <h1>BOX2</h1>
+      </div>
+      <div class="box3">
+        <h1>Box 3</h1>
+      </div>
+      <div class="box4">
+        <h1>Box 4</h1>
+      </div>
+      <div class="box5">
+        <h1>Box 5</h1>
+      </div>
+      <div class="box6">
+        <h1>Box 6</h1>
+      </div>
+    </div>
+  </body>
+</html>

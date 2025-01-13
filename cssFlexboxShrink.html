@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- by default shrink is 1 -->
+    <style>
+      .box1 {
+        background: pink;
+        width: 400px;
+        height: 400px;
+      }
+      .box2 {
+        background: orange;
+        width: 400px;
+        height: 400px;
+      }
+      .box3 {
+        background: lightblue;
+        width: 400px;
+        height: 400px;
+        /* if shrink 0 then no shrink */
+        flex-shrink: 0;
+      }
+      .box4 {
+        background: violet;
+        width: 400px;
+        height: 400px;
+        /* if shrink 2 then  shrink will be double */
+        flex-shrink: 2;
+      }
+      .box5 {
+        background: maroon;
+        width: 400px;
+        height: 400px;
+      }
+      .box6 {
+        background: green;
+        width: 400px;
+        height: 400px;
+      }
+      /* .box7 {
+        background: yellowgreen;
+        width: 400px;
+        height: 400px;
+      }
+      .box8 {
+        background: pink;
+        width: 400px;
+        height: 400px;
+      } */
+      .mainContainer {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="box1">
+        <h1>BOX1</h1>
+      </div>
+      <div class="box2">
+        <h1>BOX2</h1>
+      </div>
+      <div class="box3">
+        <h1>Box 3</h1>
+      </div>
+      <div class="box4">
+        <h1>Box 4</h1>
+      </div>
+      <div class="box5">
+        <h1>Box 5</h1>
+      </div>
+      <div class="box6">
+        <h1>Box 6</h1>
+      </div>
+    </div>
+  </body>
+</html>
