@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS transform</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        /* The element is moved 50 pixels to the right and 50 pixels down. */
+        transform: translate(50px, 50px);
+        transition: all 0.8s ease-in;
+      }
+      .box:hover {
+        /* transform: translateX(150px); */
+        /* The circle is resized to 1.5 times its original size. */
+        /* transform: scale(1.5); */
+
+        /* The element is rotated 45 degrees clockwise. */
+        /* transform: rotate(45deg); */
+
+        /*  The skew CSS function is used to distort an element along its X and/or Y axes, 
+        creating a slanted or "skewed" effect. This can make elements appear as 
+        if they are being viewed from an angle, rather than straight on.*/
+        /* transform: skew(20deg, 15deg); */
+
+        /* combine */
+        /* The element is moved, rotated, and scaled in one combined transformation. */
+        transform: translate(250px, 80px) rotate(45deg) scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
